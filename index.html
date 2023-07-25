@@ -17,30 +17,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Favicon Logo -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
     <style>
         .font-lato {
             font-family: 'Lato';
+        }
+
+        .btn-common {
+            /* padding: 20px 30px; */
+            border-radius: 8px;
+            color: white;
+            background: #F85559;
+        
         }
     </style>
 </head>
 
 <body>
-    <header class="font-lato flex justify-center grid lg:pl-[240px] lg:pr-[240px]">
+    <header class="font-lato flex justify-center grid w-full">
         <!-- Navber section -->
         <section>
             <div
                 class="flex justify-center justify-between items-center mt-12 sm:mx-auto lg:w-[1440px] bg-[#F85559] rounded-full py-[30px] px-[50px] ">
                 <!-- Menu section -->
-                <div class="flex gap-7 text-white">
-                    <h4>Home</h4>
-                    <h4>About Us</h4>
-                    <h4>Shop</h4>
-                    <h4>All Fruits</h4>
+                <div>
+                    <ul class="flex gap-7 text-white">
+                        <h4>Home</h4>
+                        <h4>About Us</h4>
+                        <h4>Shop</h4>
+                        <h4>All Fruits</h4>
+                    </ul>
                 </div>
                 <!-- nav middle logo -->
-                <div class="flex gap-4 text-white">
+                <div class="flex gap-4 text-white items-center">
                     <img src="./images/logo.png" alt="">
-                    <h1 class="text-[40px] font-semibold fon">Fruit Burst</h1>
+                    <h1 class="text-5xl font-semibold">Fruit Burst</h1>
                 </div>
                 <!-- search bar -->
                 <div class="relative">
@@ -52,8 +63,14 @@
         <!-- banner section -->
         <section class="mt-14">
             <div class="container relative">
+                <div class="text-white flex justify-center">
+                    <h1 class="absolute z-20 lg:text-7xl font-extrabold flex text-center justify-center mt-16">Exotic
+                        tastes at your <br>doorstep</h1>
+                    <p class="absolute z-20 text-[20px] mt-[220px]">We supply highly quality organic products</p>
+                    <button class="absolute z-20 btn btn-common btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-[300px]">Shop Now</button>
+                </div>
 
-                <div class="carousel w-full ">
+                <div class="carousel min-w-fit lg:w-full z-10">
                     <!-- slide1 -->
                     <div id="slide1" class="carousel-item relative w-full">
                         <img src="./images/banner1.png" class="w-full" />
