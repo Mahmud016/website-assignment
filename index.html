@@ -8,6 +8,8 @@
     <!-- tailwind and daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awosome -->
+    <script src="https://kit.fontawesome.com/459911ca31.js" crossorigin="anonymous"></script>
 
     <!-- google font Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,33 +25,66 @@
 </head>
 
 <body>
-    <header class="font-lato">
+    <header class="font-lato flex justify-center grid lg:pl-[240px] lg:pr-[240px]">
         <!-- Navber section -->
         <section>
-            <div>
+            <div
+                class="flex justify-center justify-between items-center mt-12 sm:mx-auto lg:w-[1440px] bg-[#F85559] rounded-full py-[30px] px-[50px] ">
                 <!-- Menu section -->
-                <div class="flex">
+                <div class="flex gap-7 text-white">
                     <h4>Home</h4>
                     <h4>About Us</h4>
                     <h4>Shop</h4>
                     <h4>All Fruits</h4>
                 </div>
                 <!-- nav middle logo -->
-                <div>
+                <div class="flex gap-4 text-white">
                     <img src="./images/logo.png" alt="">
                     <h1 class="text-[40px] font-semibold fon">Fruit Burst</h1>
                 </div>
                 <!-- search bar -->
-                <div class="form-control">
-                    <div class="input-group">
-                        <input type="text" placeholder="Search…" class="input input-bordered" />
-                        <button class="btn rounded-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </button>
+                <div class="relative">
+                    <input type="text" class="pl-10 pr-4 py-2 border rounded-full w-64" placeholder="Search here">
+                    <i class="absolute inset-y-0 left-0 pl-3 flex items-center fas fa-search text-black-400"></i>
+                </div>
+            </div>
+        </section>
+        <!-- banner section -->
+        <section class="mt-14">
+            <div class="container relative">
+
+                <div class="carousel w-full ">
+                    <!-- slide1 -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./images/banner1.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide2 -->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="./images/banner2.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="./images/banner3.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide4 -->
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="./images/banner4.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
                     </div>
                 </div>
             </div>
