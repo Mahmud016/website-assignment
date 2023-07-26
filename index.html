@@ -34,13 +34,13 @@
 </head>
 
 <body>
-    <header class="font-lato flex justify-center grid w-full">
+    <header class="font-lato flex justify-center grid sm:max-w-md mx-auto lg:max-w-7xl mx-auto">
         <!-- Navber section -->
         <section>
             <div
-                class="flex justify-center justify-between items-center mt-12 sm:mx-auto lg:w-[1440px] bg-[#F85559] rounded-full py-[30px] px-[50px] ">
+                class="flex justify-center justify-between items-center mt-12 sm:mx-auto lg:max-w-7xl lg:bg-[#F85559] rounded-full lg:py-[30px] px-4 lg:px-[50px] ">
                 <!-- Menu section -->
-                <div>
+                <div class="hidden sm:block">
                     <ul class="flex gap-7 text-white">
                         <h4>Home</h4>
                         <h4>About Us</h4>
@@ -48,13 +48,15 @@
                         <h4>All Fruits</h4>
                     </ul>
                 </div>
+                <!-- responsive menu -->
+                
                 <!-- nav middle logo -->
-                <div class="flex gap-4 text-white items-center">
-                    <img src="./images/logo.png" alt="">
-                    <h1 class="text-5xl font-semibold">Fruit Burst</h1>
+                <div class="flex gap-4 lg:text-white items-center">
+                    <img class="" src="./images/logo.png" alt="">
+                    <h1 class="text-2xl font-extrabold lg:text-5xl lg:font-semibold">Fruit Burst</h1>
                 </div>
                 <!-- search bar -->
-                <div class="relative">
+                <div class="relative hidden sm:block">
                     <input type="text" class="pl-10 pr-4 py-2 border rounded-full w-64" placeholder="Search here">
                     <i class="absolute inset-y-0 left-0 pl-3 flex items-center fas fa-search text-black-400"></i>
                 </div>
@@ -62,15 +64,15 @@
         </section>
         <!-- banner section -->
         <section class="mt-14">
-            <div class="container relative">
-                <div class="text-white flex justify-center">
-                    <h1 class="absolute z-20 lg:text-7xl font-extrabold flex text-center justify-center mt-16">Exotic
+            <div class="container">
+                <div class="relative text-white flex justify-center">
+                    <h1 class="absolute z-20 text-2xl lg:text-7xl font-extrabold flex text-center justify-center mt-5 lg:mt-16">Exotic
                         tastes at your <br>doorstep</h1>
-                    <p class="absolute z-20 text-[20px] mt-[220px]">We supply highly quality organic products</p>
-                    <button class="absolute z-20 btn btn-common btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-[300px]">Shop Now</button>
+                    <p class="absolute z-20 text-sm lg:text-[20px] mt-20 lg:mt-[220px]">We supply highly quality organic products</p>
+                    <button class="absolute z-20 btn btn-common lg:btn-lg mt-28 lg:mt-[300px]">Shop Now</button>
                 </div>
 
-                <div class="carousel min-w-fit lg:w-full z-10">
+                <div class="rounded-2xl carousel lg:h-auto max-w-md mx-3 lg:max-w-7xl z-10">
                     <!-- slide1 -->
                     <div id="slide1" class="carousel-item relative w-full">
                         <img src="./images/banner1.png" class="w-full" />
